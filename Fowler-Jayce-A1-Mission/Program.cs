@@ -141,7 +141,7 @@ if (playerInput3 == "right")
         // sets the bool to true so we can add it to the score later
         playerKillBat = true;
     }
-    else if (inputRight == "run")
+    if (inputRight == "run")
     {
         Console.WriteLine("You escaped the dungeon");
         //game end
@@ -206,7 +206,7 @@ if (playerInput3 == "right")
 };
 //assigns playerAroundCorner to be PlayerAroundCornerLeft or right meaning only one needs to be true
 bool playerAroundCorner = playerAroundCornerLeft || playerAroundCornerRight;
-if (playerAroundCorner = true) //player goes around the corner
+if (playerAroundCorner == true)//player goes around the corner
     {
 
 
@@ -248,4 +248,4 @@ if (playerAroundCorner = true) //player goes around the corner
         };
         Console.WriteLine($"You escaped the dungeon with a score of {playerScore}");
         //game finishs
-    };
+    }
